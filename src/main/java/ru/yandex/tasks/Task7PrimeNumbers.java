@@ -17,7 +17,7 @@ public class Task7PrimeNumbers {
         for (int i = 2; i <= n; i++) {
             if (sieve[i]) continue;
             answer.add(i);
-            for (int j = i * i; j <= n; j += i) {
+            for (int j = 2 * i; j <= n; j += i) {
                 sieve[j] = true;
             }
         }
