@@ -9,6 +9,7 @@ public class Task6BraceBalance {
          * Выход: true/false, является ли строка ПСП
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+        if (sequence == null) return true;
         Stack<Character> stack = new Stack<>();
         for (char brace : sequence.toCharArray()) {
             if (brace == '{' || brace == '[' || brace == '(') {
